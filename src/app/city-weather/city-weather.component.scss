@@ -1,0 +1,155 @@
+.container {
+    display:Flex;
+    flex-direction:column;
+    min-height: 60vh; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.weatherinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    div {
+            width: 30%;
+    }
+}
+.generalweather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.weatherdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.mainTemp{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;       
+}
+ion-icon {
+    font-size: 5rem;
+    color: white;
+}
+.descriptionImage {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.weatherIcon {
+    width: 12rem;
+    margin: 43px 0px;
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPAD
+  */
+  
+  @media (max-width: 768px) {
+    
+  .weatherinfo {
+      position: relative;
+      bottom: 290px;
+      margin: auto;
+  }
+  .descriptionImage {
+    position: relative;
+    bottom: 50px;
+}
+.descriptionImage .weatherDescription {
+    position: relative;
+    bottom: 80px;
+    font-size: 1.9rem;
+}
+.thermometer {
+    position: relative;
+    bottom: 280px;
+    font-size: 1.2rem;
+}
+.thermometer img {
+    width: 132px;
+}
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPAD PRO
+  */
+  
+  @media (min-width: 1024px) {
+    .weatherinfo {
+        position: relative;
+        bottom: 250px;
+        margin: auto;
+        font-size: 1.7rem;
+    }
+    .descriptionImage {
+        position: relative;
+        bottom: 50px;
+    }
+    .descriptionImage .weatherDescription {
+        position: relative;
+        bottom: 80px;
+        font-size: 2rem;
+    }
+    .thermometer {
+        position: relative;
+        bottom: 300px;
+        font-size: 1.8rem;
+    }
+    .thermometer img {
+        width: 132px;
+    }
+    .max-min-temp {
+        font-size: 20px;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPHONE X
+  */
+  
+  @media (max-width: 375px) {
+    .weatherinfo {
+        position: relative;
+        bottom: 285px;
+        margin: auto;
+        width: 100vw;
+        display: flex;
+        ion-icon {
+            font-size: 1.3rem;
+        }
+    }
+
+    .descriptionImage {
+        position: relative;
+        bottom: 50px;
+    }
+    .descriptionImage img {
+        width: 140px;
+    }
+    .descriptionImage .weatherDescription {
+        position: relative;
+       bottom: 60px;
+        font-size: 1.3rem;
+    }
+    .thermometer {
+        position: relative;
+        bottom: 270px;
+    }
+    .thermometer img {
+        width: 110px;
+    }
+
+  }

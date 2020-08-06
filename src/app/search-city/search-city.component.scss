@@ -1,0 +1,20 @@
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }  
+  .optionsAndButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+.storedCities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storedCities ion-button {
+  margin-right: 8%;
+}
+form {
+  margin-top: 50px;
+}
+  

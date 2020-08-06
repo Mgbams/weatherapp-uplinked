@@ -1,0 +1,249 @@
+.weatherIcon {
+    --padding-bottom: 3px;
+    
+  }
+
+// Setting the background colours of the weatherforecasts images
+.slide-page-one .weatherIcon {
+    background-color: #1eb2a6;
+}
+.slide-page-two .weatherIcon {
+  background-color: #ffa34d;
+}
+.slide-page-three .weatherIcon {
+  background-color: #596157;
+}
+.slide-page-four .weatherIcon {
+  background-color: #efb1ff;
+}
+.slide-page-five .weatherIcon {
+  background-color: #216353;
+}
+.slide-page-six .weatherIcon {
+  background-color: #0f4c81;
+}
+.slide-page-seven .weatherIcon {
+  background-color: #b0a160;
+}
+.slide-page-eight .weatherIcon {
+  background-color: #7a4d1d;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    background-color:transparent;
+}
+.swiper-button-next {
+    position: absolute;
+    top: 53%;
+    right: 25%;
+    background-color:transparent;
+} 
+.time {
+   position: relative;
+   top: 8px;
+}
+
+
+// MEDIA QUERIES
+    
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen of MaxWidth 99x3px
+  */
+  
+  @media (min-width: 993px)  {
+    .swiper-button-prev {
+      position: absolute;
+      top: 74%;
+      left: 10%;
+      background-color:transparent;
+  }
+  .swiper-button-next {
+      position: absolute;
+      top: 80%;
+      right: 10%;
+      background-color:transparent;
+  } 
+    
+}
+
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## For ION-SLIDES
+  */
+  
+  @media  (min-width: 360px) and (max-width: 892px)  {
+    
+    ion-slides {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.2rem;
+        position: relative;
+        bottom: 450px;
+    }  
+  }
+
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPAD PRO
+  */
+  
+  @media (min-width: 1024px) {
+    
+    .swiper-button-prev {
+      position: absolute;
+      top: 900px !important;
+      left: 5%;
+      background-color:transparent;
+  }
+  .swiper-button-next {
+      position: absolute;
+      top: 900px !important;
+      right: 5%;
+      background-color:transparent;
+  } 
+  .time, .description, .tempActual {
+    font-size: 20px;
+  }
+  ion-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2rem;
+}
+
+  ion-slide > div {
+    width: 24%;
+  }
+  ion-slides {
+    position: relative;
+    bottom: 50px;
+    font-size: 1.6rem;
+  }
+  .swipeButton {
+    position: relative;
+    bottom: 100px;
+    font-size: 1.6rem;
+    color: yellow;
+    }
+}
+
+ /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPAD
+  */
+  
+  @media (max-width: 768px) {
+    
+    .swiper-button-prev {
+      position: absolute;
+      top: 53%;
+      left: 5%;
+      background-color:transparent;
+  }
+  .swiper-button-next {
+      position: absolute;
+      top: 53%;
+      right: 5%;
+      background-color:transparent;
+  } 
+  ion-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+  ion-slide > div {
+    width: 23%;
+  }
+  ion-slides {
+    position: relative;
+    bottom: 293px;
+  }
+  .swipeButton {
+    position: relative;
+    bottom: 295px;
+    color: yellow;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## IPHONE X
+  */
+  
+  @media (max-width: 375px) {
+    
+    ion-slide > div {
+      width: 21%;
+      font-size: .85rem;
+    }
+    ion-slides {
+     font-size: .5rem;
+     padding-top: 7px;
+     bottom: 295px;
+    }
+    .swipeButton {
+      position: relative;
+      bottom: 320px;
+      color: yellow;
+      font-size: .75rem;
+      }
+      .swiper-button-prev {
+        position: absolute;
+        top: 52%;
+        left: .5%;
+        background-color:transparent;
+    }
+    .swiper-button-next {
+        position: absolute;
+        top: 52%;
+        right: .5%;
+        background-color:transparent;
+    } 
+  }
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ## PC
+  */
+  
+  @media (min-width: 1200px) {
+      .swiper-button-prev {
+        position: absolute;
+        top: 68%;
+        left: 25%;
+        background-color:transparent;
+    }
+    .swiper-button-next {
+        position: absolute;
+        top: 68%;
+        right: 25%;
+        background-color:transparent;
+    } 
+    ion-slides {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 1.2rem;
+  }
+
+  ion-slide > div {
+    width: 10%;
+  }
+  }
+
+
+
+  
